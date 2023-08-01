@@ -13,7 +13,3 @@ def post_new_client_kit(kit_headers,kit_body):
     return requests.post((configuration.URL_SERVICE + configuration.CLIENT_KIT_PATH),
                          json=kit_body,
                          headers=kit_headers)
-
-#Получение Наборов из БД
-def get_kits_table():
-    return requests.get(configuration.URL_SERVICE + configuration.KITS_TABLE_PATH)
